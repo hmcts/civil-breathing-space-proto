@@ -13,13 +13,16 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Enter breathing space</h1>
+      <span class="govuk-caption-l">#1562-6624-5759-3841</span>
 
-      <form class="form" action="check-answers-enter" method="post">
+      <h1 class="govuk-heading-xl">Enter breathing space</h1>
+      <span class="govuk-caption-l">#1562-6624-5759-3841</span>
+
+      <form class="form" action="/check-answers-enter" method="post">
 
         <div class="govuk-form-group">
           <label class="govuk-label" for="event-name">
-            What is the name of the event?
+            Reference Number (Optional)
           </label>
           <input class="govuk-input" id="event-name" name="event-name" type="text">
         </div>
@@ -27,10 +30,10 @@
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
             <legend class="govuk-fieldset__legend">
-              When was your passport issued?
+              When didit start? (Optional)
             </legend>
             <div id="passport-issued-hint" class="govuk-hint">
-              For example, 27 3 2007
+              This is the date it started, not the date you received notification of it (optional). For e.g. 15 11 2020
             </div>
             <div class="govuk-date-input" id="passport-issued">
               <div class="govuk-date-input__item">
@@ -62,19 +65,19 @@
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend">
-              Where do you live?
+              What type is it?
             </legend>
             <div class="govuk-radios" data-module="govuk-radios">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                <input class="govuk-radios__input" id="what-type-is-it" name="what-type-is-it" type="radio" value="Standard-Breathing-Space">
                 <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-                  England
+                  Standard Breathing Space
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                  Scotland
+                <input class="govuk-radios__input" id="what-type-is-it-2" name="what-type-is-it" type="radio" value="Mental-Health">
+                <label class="govuk-label govuk-radios__label" for="What-type-is-it-2">
+                  Mental Health Crises Moratorium
                 </label>
               </div>
             </div>
@@ -85,10 +88,10 @@
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
             <legend class="govuk-fieldset__legend">
-              When was your passport issued?
+              Expected end date (Optional)
             </legend>
             <div id="passport-issued-hint" class="govuk-hint">
-              For example, 27 3 2007
+              This is the end date that it is due to finish (optional). For example, 17 11 2020
             </div>
             <div class="govuk-date-input" id="passport-issued">
               <div class="govuk-date-input__item">
@@ -119,22 +122,31 @@
 
         <div class="govuk-form-group">
           <label class="govuk-label" for="event-name">
-            What is the name of the event?
+            Event summary (Optional)
           </label>
           <div id="event-name-hint" class="govuk-hint">
-            The name you’ll use on promotional material.
+            A few words describing the purpose of the event.
           </div>
           <input class="govuk-input" id="event-name" name="event-name" type="text">
         </div>
 
         <div class="govuk-form-group">
           <label class="govuk-label" for="more-detail">
-            Can you provide more detail?
+            Event description (Optional)
           </label>
           <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
         </div>
 
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
+        <div class="govuk-button-group">
+          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            Previous
+          </button>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+        </div>
 
       </form>
 

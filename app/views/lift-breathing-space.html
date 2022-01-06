@@ -14,39 +14,40 @@
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl">Lift Breathing Space</h1>
+      <span class="govuk-caption-l">#1562-6624-5759-3841</span>
 
-      <form class="form" action="app/views/check-answers-lift" method="post">
+      <form class="form" action="/check-answers-lift" method="post">
 
 
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
             <legend class="govuk-fieldset__legend">
-              When was your passport issued?
+              When did it end?
             </legend>
             <div id="passport-issued-hint" class="govuk-hint">
-              For example, 27 3 2007
+              This is the date that you have been instructed it will finish
             </div>
-            <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input" id="lift-breathing">
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  <label class="govuk-label govuk-date-input__label" for="lift-breathing-day">
                     Day
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="lift-breathing-day" name="lift-breathing-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
               </div>
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  <label class="govuk-label govuk-date-input__label" for="lift-breathing-month">
                     Month
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="lift-breathing-month" name="lift-breathing-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
               </div>
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  <label class="govuk-label govuk-date-input__label" for="lift-breathing-year">
                     Year
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="lift-breathing-year" name="lift-breathing-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
               </div>
             </div>
 
@@ -55,22 +56,31 @@
 
         <div class="govuk-form-group">
           <label class="govuk-label" for="event-name">
-            What is the name of the event?
+            Event summary (Optional)
           </label>
           <div id="event-name-hint" class="govuk-hint">
-            The name you’ll use on promotional material.
+            A few words describing the purpose of the event.
           </div>
           <input class="govuk-input" id="event-name" name="event-name" type="text">
         </div>
 
         <div class="govuk-form-group">
           <label class="govuk-label" for="more-detail">
-            Can you provide more detail?
+            Event description (Optional)
           </label>
           <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
         </div>
 
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
+        <div class="govuk-button-group">
+          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            Previous
+          </button>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+        </div>
 
       </form>
 

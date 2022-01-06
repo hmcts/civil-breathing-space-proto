@@ -1,0 +1,1098 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        231MC910 John Smith Vs Rose Smith
+
+      </h1>
+      </div>
+      <form action="/Enter-breathing-space" method="post" novalidate>
+      <div style="float:right;"  class="govuk-grid-column-one-third">
+      <div class="govuk-form-group">
+        <button  style="float:right;" class="govuk-button" type="submit" data-module="govuk-button">
+          Go
+        </button>
+
+        <select  style="float:right; margin-right: 10px;" class="govuk-select" id="sort" name="nextstep">
+          <option value="Select" >Select action</option>
+          <option value="Enter">Enter Breathing Space</option>
+          <option value="other-2">other</option>
+        </select>
+
+
+        <label style="float:right; margin-right: 10px;" class="govuk-label " for="sort">
+          Next step
+           </label>
+      </div>
+   </div>
+   </form>
+   </div>
+
+      <div style="margin-right: 0px; margin-left: 0px;" class="govuk-grid-row">
+        <div class="">
+
+                      <form action="notifications" method="post" novalidate>
+                        <div class="govuk-tabs" data-module="govuk-tabs">
+            <h2 class="govuk-tabs__title">
+              Contents
+            </h2>
+            <ul class="govuk-tabs__list">
+              <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#summary">
+              Claim Event History
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#claimdetails">
+                  Claim Details
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#claimant">
+               Claimant Details
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#history">
+               Defendant Details
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#history">
+               Claim Documents
+                </a>
+              </li>
+              <!-- <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#history">
+               Payment History
+                </a>
+              </li> -->
+
+            </ul>
+            <!-- split -->
+
+            <div class="govuk-tabs__panel" id="summary">
+
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-row">
+
+                  <!-- left side -->
+                  <div class="govuk-grid-column-one-half">
+                    <table class="govuk-table">
+
+                      <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+
+                        <th scope="col" class="govuk-table__header" aria-sort="ascending">Name</th>
+                        <th scope="col" class="govuk-table__header" aria-sort="none">Date</th>
+                        <th scope="col" class="govuk-table__header govuk-table__header--numeric" aria-sort="none">Auther</th>
+
+                      </tr>
+                      </thead>
+
+                      <tbody class="govuk-table__body">
+
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Adam Smith</td>
+                        <td class="govuk-table__cell" data-sort-value="1568847600000">19 September 2019</td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="59">£59</td>
+                      </tr>
+
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Benjamin Franklin</td>
+                        <td class="govuk-table__cell" data-sort-value="1516233600000">18 January 2018</td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="45">£45</td>
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Jane Benn</td>
+                        <td class="govuk-table__cell" data-sort-value="1004572800000">1 November 2001</td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="2000">£2000</td>
+                      </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- right side -->
+
+                  <div class="govuk-grid-column-one-half">
+
+                    <table class="govuk-table">
+
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">CaseMan reference number
+                            </td>
+                          <td class="govuk-table__cell">001DC035</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+              </div>
+
+
+
+
+
+            </div>
+
+          <!-- split -->
+
+
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden govuk-grid-column-one-half" id="claimdetails">
+              <table class="govuk-table">
+
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">CaseMan reference number
+                      </td>
+                    <td class="govuk-table__cell">001DC035</td>
+
+                  </tr>
+
+
+                </tbody>
+              </table>
+              <div class="govuk-notification-banner2" >
+                <div class="govuk-notification-banner__header2">
+                  <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                    Claim references
+                  </h2>
+                </div>
+                <div class="govuk-notification-banner__content2">
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Claimant's legal representative's reference</td>
+                        <td class="govuk-table__cell">123</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Defendant's legal representative's reference</td>
+                        <td class="govuk-table__cell">
+                          123</td>
+
+
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="govuk-notification-banner2" >
+                <div class="govuk-notification-banner__header2">
+                  <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                 Details of PBA
+                  </h2>
+                </div>
+                <div class="govuk-notification-banner__content2">
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Customer reference</td>
+                        <td class="govuk-table__cell">123</td>
+
+
+                      </tr>
+
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="govuk-notification-banner2" >
+                <div class="govuk-notification-banner__header2">
+                  <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                    Claimant details
+                  </h2>
+                </div>
+                <div class="govuk-notification-banner__content2">
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party type</td>
+                        <td class="govuk-table__cell">Company</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Name</td>
+                        <td class="govuk-table__cell">
+                          123</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Version</td>
+                        <td class="govuk-table__cell">
+                         6</td>
+
+
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                  <div class="govuk-notification-banner2" >
+                    <div class="govuk-notification-banner__header2">
+                      <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                      Address
+                      </h2>
+                    </div>
+                    <div class="govuk-notification-banner__content2">
+                      <table  class="govuk-table  ">
+
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Building and Street
+                        </td>
+                            <td class="govuk-table__cell">      Flat 2</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Address Line 2
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              Kendal Court</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Address Line 3
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              10 Rosemary Lane</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Town or City
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              London</td>
+
+
+                          </tr>
+
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Postcode/Zipcode
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              SW14 7HG</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Country
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              United Kingdom</td>
+
+
+                          </tr>
+
+
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">PBA Number</td>
+                        <td class="govuk-table__cell">PBA0088192</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party name
+                       </td>
+                        <td class="govuk-table__cell">
+
+              123</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party type displayed value
+
+                        </td>
+                        <td class="govuk-table__cell">
+                          Company</td>
+
+
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="govuk-notification-banner2" >
+                <div class="govuk-notification-banner__header2">
+                  <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                    Defendant details
+                  </h2>
+                </div>
+                <div class="govuk-notification-banner__content2">
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party type</td>
+                        <td class="govuk-table__cell">Company</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Name</td>
+                        <td class="govuk-table__cell">
+                          123</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Version</td>
+                        <td class="govuk-table__cell">
+                         6</td>
+
+
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                  <div class="govuk-notification-banner2" >
+                    <div class="govuk-notification-banner__header2">
+                      <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                      Address
+                      </h2>
+                    </div>
+                    <div class="govuk-notification-banner__content2">
+                      <table  class="govuk-table  ">
+
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Building and Street
+                        </td>
+                            <td class="govuk-table__cell">      Flat 2</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Address Line 2
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              Kendal Court</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Address Line 3
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              10 Rosemary Lane</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Town or City
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              London</td>
+
+
+                          </tr>
+
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Postcode/Zipcode
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              SW14 7HG</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Country
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              United Kingdom</td>
+
+
+                          </tr>
+
+
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">PBA Number</td>
+                        <td class="govuk-table__cell">PBA0088192</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party name
+                       </td>
+                        <td class="govuk-table__cell">
+
+              123</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party type displayed value
+
+                        </td>
+                        <td class="govuk-table__cell">
+                          Company</td>
+
+
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="govuk-notification-banner2" >
+                <div class="govuk-notification-banner__header2">
+                  <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                    Court location code
+                  </h2>
+                </div>
+              <div class="govuk-notification-banner__content2">
+                <table  class="govuk-table  ">
+
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">Court location code</td>
+                      <td class="govuk-table__cell">123</td>
+
+
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="">Use court finder</a> (opens in a new window) to find the 3 digit court location code of your preferred court.</td>
+                      <td class="govuk-table__cell"></td>
+
+
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+              </div>
+             </div>
+             <div class="govuk-notification-banner2" >
+              <div class="govuk-notification-banner__header2">
+                <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                  Claimant's legal representative
+                </h2>
+              </div>
+            <div class="govuk-notification-banner__content2">
+              <table  class="govuk-table  ">
+
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Organisation</td>
+                    <td class="govuk-table__cell">
+                      Name:	Civil - Organisation 1<br><br>
+
+                      Address:	<br>
+          38 Delisle Road<br>
+          London<br>
+          United Kingdom<br>
+          SE28 0JE<br>
+
+                    </td>
+
+
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Case Assigned Role</td>
+                    <td class="govuk-table__cell">
+                      [APPLICANTSOLICITORONE]</td>
+
+
+                  </tr>
+
+
+
+                </tbody>
+              </table>
+            </div>
+
+           </div>
+           <div class="govuk-notification-banner2" >
+            <div class="govuk-notification-banner__header2">
+              <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                Defendant's legal representative
+              </h2>
+            </div>
+          <div class="govuk-notification-banner__content2">
+            <table  class="govuk-table  ">
+
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Organisation</td>
+                  <td class="govuk-table__cell">
+                    Name:	Civil - Organisation 2<br><br>
+
+                    Address:	<br>
+          45 Delisle Road<br>
+          London<br>
+          United Kingdom<br>
+          SE28 7JE<br>
+
+                  </td>
+
+
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Case Assigned Role</td>
+                  <td class="govuk-table__cell">
+
+          [RESPONDENTSOLICITORONE]</td>
+
+
+                </tr>
+
+
+
+              </tbody>
+            </table>
+          </div>
+
+          </div>
+
+            </div>
+
+             <div class="govuk-tabs__panel govuk-tabs__panel--hidden govuk-grid-column-one-half" id="claimant">
+              <table class="govuk-table">
+
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">reference number
+                      </td>
+                    <td class="govuk-table__cell">001DC035</td>
+
+                  </tr>
+
+
+                </tbody>
+              </table>
+              <div class="govuk-notification-banner2" >
+                <div class="govuk-notification-banner__header2">
+                  <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                    Claim references
+                  </h2>
+                </div>
+                <div class="govuk-notification-banner__content2">
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Claimant's legal representative's reference</td>
+                        <td class="govuk-table__cell">123</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Defendant's legal representative's reference</td>
+                        <td class="govuk-table__cell">
+                          123</td>
+
+
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="govuk-notification-banner2" >
+                <div class="govuk-notification-banner__header2">
+                  <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                 Details of PBA
+                  </h2>
+                </div>
+                <div class="govuk-notification-banner__content2">
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Customer reference</td>
+                        <td class="govuk-table__cell">123</td>
+
+
+                      </tr>
+
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="govuk-notification-banner2" >
+                <div class="govuk-notification-banner__header2">
+                  <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                    Claimant details
+                  </h2>
+                </div>
+                <div class="govuk-notification-banner__content2">
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party type</td>
+                        <td class="govuk-table__cell">Company</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Name</td>
+                        <td class="govuk-table__cell">
+                          123</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Version</td>
+                        <td class="govuk-table__cell">
+                         6</td>
+
+
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                  <div class="govuk-notification-banner2" >
+                    <div class="govuk-notification-banner__header2">
+                      <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                      Address
+                      </h2>
+                    </div>
+                    <div class="govuk-notification-banner__content2">
+                      <table  class="govuk-table  ">
+
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Building and Street
+                        </td>
+                            <td class="govuk-table__cell">      Flat 2</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Address Line 2
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              Kendal Court</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Address Line 3
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              10 Rosemary Lane</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Town or City
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              London</td>
+
+
+                          </tr>
+
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Postcode/Zipcode
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              SW14 7HG</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Country
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              United Kingdom</td>
+
+
+                          </tr>
+
+
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">PBA Number</td>
+                        <td class="govuk-table__cell">PBA0088192</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party name
+                       </td>
+                        <td class="govuk-table__cell">
+
+              123</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party type displayed value
+
+                        </td>
+                        <td class="govuk-table__cell">
+                          Company</td>
+
+
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="govuk-notification-banner2" >
+                <div class="govuk-notification-banner__header2">
+                  <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                    Defendant details
+                  </h2>
+                </div>
+                <div class="govuk-notification-banner__content2">
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party type</td>
+                        <td class="govuk-table__cell">Company</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Name</td>
+                        <td class="govuk-table__cell">
+                          123</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Version</td>
+                        <td class="govuk-table__cell">
+                         6</td>
+
+
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                  <div class="govuk-notification-banner2" >
+                    <div class="govuk-notification-banner__header2">
+                      <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                      Address
+                      </h2>
+                    </div>
+                    <div class="govuk-notification-banner__content2">
+                      <table  class="govuk-table  ">
+
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Building and Street
+                        </td>
+                            <td class="govuk-table__cell">      Flat 2</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Address Line 2
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              Kendal Court</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Address Line 3
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              10 Rosemary Lane</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Town or City
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              London</td>
+
+
+                          </tr>
+
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Postcode/Zipcode
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              SW14 7HG</td>
+
+
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Country
+
+
+                              </td>
+                            <td class="govuk-table__cell">
+                              United Kingdom</td>
+
+
+                          </tr>
+
+
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <table  class="govuk-table  ">
+
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">PBA Number</td>
+                        <td class="govuk-table__cell">PBA0088192</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party name
+                       </td>
+                        <td class="govuk-table__cell">
+
+              123</td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Party type displayed value
+
+                        </td>
+                        <td class="govuk-table__cell">
+                          Company</td>
+
+
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="govuk-notification-banner2" >
+                <div class="govuk-notification-banner__header2">
+                  <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                    Court location code
+                  </h2>
+                </div>
+              <div class="govuk-notification-banner__content2">
+                <table  class="govuk-table  ">
+
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">Court location code</td>
+                      <td class="govuk-table__cell">123</td>
+
+
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="">Use court finder</a> (opens in a new window) to find the 3 digit court location code of your preferred court.</td>
+                      <td class="govuk-table__cell"></td>
+
+
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+              </div>
+             </div>
+             <div class="govuk-notification-banner2" >
+              <div class="govuk-notification-banner__header2">
+                <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                  Claimant's legal representative
+                </h2>
+              </div>
+            <div class="govuk-notification-banner__content2">
+              <table  class="govuk-table  ">
+
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Organisation</td>
+                    <td class="govuk-table__cell">
+                      Name:	Civil - Organisation 1<br><br>
+
+                      Address:	<br>
+          38 Delisle Road<br>
+          London<br>
+          United Kingdom<br>
+          SE28 0JE<br>
+
+                    </td>
+
+
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Case Assigned Role</td>
+                    <td class="govuk-table__cell">
+                      [APPLICANTSOLICITORONE]</td>
+
+
+                  </tr>
+
+
+
+                </tbody>
+              </table>
+            </div>
+
+           </div>
+           <div class="govuk-notification-banner2" >
+            <div class="govuk-notification-banner__header2">
+              <h2 class="govuk-notification-banner__title2" id="govuk-notification-banner-title">
+                Defendant's legal representative
+              </h2>
+            </div>
+          <div class="govuk-notification-banner__content2">
+            <table  class="govuk-table  ">
+
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Organisation</td>
+                  <td class="govuk-table__cell">
+                    Name:	Civil - Organisation 2<br><br>
+
+                    Address:	<br>
+          45 Delisle Road<br>
+          London<br>
+          United Kingdom<br>
+          SE28 7JE<br>
+
+                  </td>
+
+
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Case Assigned Role</td>
+                  <td class="govuk-table__cell">
+
+          [RESPONDENTSOLICITORONE]</td>
+
+
+                </tr>
+
+
+
+              </tbody>
+            </table>
+          </div>
+
+          </div>
+
+            </div>
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
+              <h2 class="govuk-heading-l"> History</h2>
+
+
+            </div>
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden govuk-grid-column-one-half" id="documents">
+              <h2 class="govuk-heading-l"> Docs</h2>
+
+
+            </div>
+
+        </div>
+          </form>
+
+     </div>
+  </div>
+
+
+  {% block pageScripts %}
+
+  <script>
+$('#addressbtn').on('click', function(){
+    $('#addressList').removeClass('govuk-visually-hidden');
+});
+   </script>
+   {% endblock %}
+
+
+{% endblock %}
