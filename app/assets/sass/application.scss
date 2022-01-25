@@ -16,3 +16,9 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/related-items";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+.active-row{
+  background-color: #ccc;
+}
+.add-border{
+  border: 1px solid #ccc;
+}
